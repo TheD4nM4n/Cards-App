@@ -5,10 +5,7 @@ struct ContentView: View {
     // Stores the card currently displayed
     @State private var currentCard: Image
 
-    /* Overrides the normal startup
-     code, and adds code to generate
-     each image object */
-    
+    // Overrrides startup code to initialize all Image objects
     init() {
         
         // See Data.swift
@@ -29,15 +26,18 @@ struct ContentView: View {
             // Button to change the card
             Button("Change Card"){
                 
-                // End of deck loopback handling
-                if imagesOfCards.firstIndex(of: currentCard)! == 51 {
+                // Gets index of the card on the display
+                let currentIndex = imagesOfCards.firstIndex(of: currentCard)!
+                
+                // End of deck loopback
+                if currentIndex == 51 {
                     
                     // If at the 52nd card, move back to index 0 (1st card)
                     currentCard = imagesOfCards[0]
                 } else {
                     
                     // Increments the card shown by moving forward in the array's index
-                    currentCard = imagesOfCards[imagesOfCards.firstIndex(of: currentCard)! + 1]
+                    currentCard = imagesOfCards[currentIndex + 1]
                 }
                 
             }
