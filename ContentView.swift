@@ -20,8 +20,6 @@ struct ContentView: View {
             
             // Card on screen
             currentCard
-                .resizable()
-                .scaledToFit()
             
             // Button to change the card
             Button("Change Card"){

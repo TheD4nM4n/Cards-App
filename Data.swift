@@ -22,7 +22,10 @@ func generateImages() {
     // Generates images in order, sorted by suit
     for suit in suitArray {
         for card in cardsArray {
-            imagesOfCards.append(Image("\(card)_of_\(suit)"))
+            imagesOfCards.append(Image("\(card)_of_\(suit)")
+                                    .resizable()
+                                    .scaledToFit()
+                                 as! Image)
         }
     }
 }
