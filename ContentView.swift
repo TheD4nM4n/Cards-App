@@ -1,13 +1,8 @@
 import SwiftUI
 
-let cardsArray: [String] = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king", "ace"]
-let suitArray: [String] = ["diamonds", "spades", "hearts", "clubs"]
-
-var imagesOfCards: [Image] = []
-
 struct ContentView: View {
     
-    // Stores the current card
+    // Stores the card currently displayed
     @State private var currentCard: Image
 
     /* Overrides the normal startup
@@ -16,12 +11,8 @@ struct ContentView: View {
     
     init() {
         
-        // Adds each card of the suit to the array, then moves on to the next suit
-        for suit in suitArray {
-            for card in cardsArray {
-                imagesOfCards.append(Image("\(card)_of_\(suit)"))
-            }
-        }
+        // See Data.swift
+        generateImages()
         
         // Sets initial card to display
         self.currentCard = imagesOfCards[0]
