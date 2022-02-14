@@ -18,14 +18,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            // Card on screen
-            currentCard
-                .resizable()
-                .scaledToFit()
-            
-            // Button to change the card
-            Button("Change Card"){
-                
+            // Card as image
+            Button(action: {
                 // Gets index of the card on the display
                 let currentIndex = imagesOfCards.firstIndex(of: currentCard)!
                 
@@ -39,7 +33,11 @@ struct ContentView: View {
                     // Increments the card shown by moving forward in the array's index
                     currentCard = imagesOfCards[currentIndex + 1]
                 }
-                
+
+            }){
+                currentCard
+                    .resizable()
+                    .scaledToFit()
             }
             
             // Make it easier to read
