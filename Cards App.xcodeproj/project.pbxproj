@@ -14,6 +14,9 @@
 		8A14476527BD5A420096D560 /* Cards_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14476427BD5A420096D560 /* Cards_AppTests.swift */; };
 		8A14476F27BD5A420096D560 /* Cards_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14476E27BD5A420096D560 /* Cards_AppUITests.swift */; };
 		8A14477127BD5A420096D560 /* Cards_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14477027BD5A420096D560 /* Cards_AppUITestsLaunchTests.swift */; };
+		8A14477E27BD5A940096D560 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14477D27BD5A940096D560 /* Data.swift */; };
+		8A14477F27BD5A940096D560 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14477D27BD5A940096D560 /* Data.swift */; };
+		8A14478027BD5A940096D560 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A14477D27BD5A940096D560 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		8A14476A27BD5A420096D560 /* Cards AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cards AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A14476E27BD5A420096D560 /* Cards_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards_AppUITests.swift; sourceTree = "<group>"; };
 		8A14477027BD5A420096D560 /* Cards_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A14477D27BD5A940096D560 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = "../../Cards App.swiftpm/Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				8A14475327BD5A3D0096D560 /* Cards_AppApp.swift */,
 				8A14475527BD5A3D0096D560 /* ContentView.swift */,
+				8A14477D27BD5A940096D560 /* Data.swift */,
 				8A14475727BD5A410096D560 /* Assets.xcassets */,
 				8A14475927BD5A410096D560 /* Preview Content */,
 			);
@@ -258,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A14475627BD5A3D0096D560 /* ContentView.swift in Sources */,
+				8A14477E27BD5A940096D560 /* Data.swift in Sources */,
 				8A14475427BD5A3D0096D560 /* Cards_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A14476527BD5A420096D560 /* Cards_AppTests.swift in Sources */,
+				8A14477F27BD5A940096D560 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A14477127BD5A420096D560 /* Cards_AppUITestsLaunchTests.swift in Sources */,
+				8A14478027BD5A940096D560 /* Data.swift in Sources */,
 				8A14476F27BD5A420096D560 /* Cards_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
